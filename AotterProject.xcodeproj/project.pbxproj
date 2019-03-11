@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3859F8A1B27FD9D031DEE5B5 /* Pods_AotterProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C1B5EBE3961232A9E7B810 /* Pods_AotterProject.framework */; };
+		DE6318A2223641E50065D221 /* CollectingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6318A1223641E50065D221 /* CollectingManager.m */; };
+		DE6318A5223659860065D221 /* MyCollectingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6318A4223659860065D221 /* MyCollectingViewController.m */; };
+		DE6318A822365FB40065D221 /* CollectingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6318A722365FB40065D221 /* CollectingListViewController.m */; };
+		DED9D29E223162BC0003CDEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D29D223162BC0003CDEA /* AppDelegate.m */; };
+		DED9D2A4223162BC0003CDEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED9D2A2223162BC0003CDEA /* Main.storyboard */; };
+		DED9D2A6223162BE0003CDEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED9D2A5223162BE0003CDEA /* Assets.xcassets */; };
+		DED9D2A9223162BE0003CDEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED9D2A7223162BE0003CDEA /* LaunchScreen.storyboard */; };
+		DED9D2AC223162BE0003CDEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2AB223162BE0003CDEA /* main.m */; };
+		DED9D2B62234BA590003CDEA /* MyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2B52234BA590003CDEA /* MyInfoViewController.m */; };
+		DED9D2BC2234C1630003CDEA /* CollectingInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2BB2234C1630003CDEA /* CollectingInfoTableViewCell.m */; };
+		DED9D2BF2234C9A90003CDEA /* ThemeInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2BE2234C9A90003CDEA /* ThemeInfoTableViewCell.m */; };
+		DED9D2C22234CED00003CDEA /* SettingThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2C12234CED00003CDEA /* SettingThemeViewController.m */; };
+		DED9D2C62234DAAF0003CDEA /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2C52234DAAF0003CDEA /* ThemeManager.m */; };
+		DED9D2C92235440F0003CDEA /* ThemeOptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2C82235440F0003CDEA /* ThemeOptionTableViewCell.m */; };
+		DED9D2D12235590D0003CDEA /* SearchITunesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2D02235590D0003CDEA /* SearchITunesViewController.m */; };
+		DED9D2D4223559A10003CDEA /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2D3223559A10003CDEA /* MovieTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C759394DC19746F5C734D2C /* Pods-AotterProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AotterProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-AotterProject/Pods-AotterProject.release.xcconfig"; sourceTree = "<group>"; };
+		37C1B5EBE3961232A9E7B810 /* Pods_AotterProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AotterProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB4ADC4503D229F1B4216E6 /* Pods-AotterProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AotterProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AotterProject/Pods-AotterProject.debug.xcconfig"; sourceTree = "<group>"; };
+		DE6318A0223641E50065D221 /* CollectingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectingManager.h; sourceTree = "<group>"; };
+		DE6318A1223641E50065D221 /* CollectingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectingManager.m; sourceTree = "<group>"; };
+		DE6318A3223659860065D221 /* MyCollectingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectingViewController.h; sourceTree = "<group>"; };
+		DE6318A4223659860065D221 /* MyCollectingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectingViewController.m; sourceTree = "<group>"; };
+		DE6318A622365FB40065D221 /* CollectingListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectingListViewController.h; sourceTree = "<group>"; };
+		DE6318A722365FB40065D221 /* CollectingListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectingListViewController.m; sourceTree = "<group>"; };
+		DED9D299223162BC0003CDEA /* AotterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AotterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DED9D29C223162BC0003CDEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DED9D29D223162BC0003CDEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DED9D2A3223162BC0003CDEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DED9D2A5223162BE0003CDEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DED9D2A8223162BE0003CDEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DED9D2AA223162BE0003CDEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DED9D2AB223162BE0003CDEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DED9D2B42234BA590003CDEA /* MyInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInfoViewController.h; sourceTree = "<group>"; };
+		DED9D2B52234BA590003CDEA /* MyInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInfoViewController.m; sourceTree = "<group>"; };
+		DED9D2BA2234C1630003CDEA /* CollectingInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectingInfoTableViewCell.h; sourceTree = "<group>"; };
+		DED9D2BB2234C1630003CDEA /* CollectingInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectingInfoTableViewCell.m; sourceTree = "<group>"; };
+		DED9D2BD2234C9A90003CDEA /* ThemeInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeInfoTableViewCell.h; sourceTree = "<group>"; };
+		DED9D2BE2234C9A90003CDEA /* ThemeInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemeInfoTableViewCell.m; sourceTree = "<group>"; };
+		DED9D2C02234CED00003CDEA /* SettingThemeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingThemeViewController.h; sourceTree = "<group>"; };
+		DED9D2C12234CED00003CDEA /* SettingThemeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingThemeViewController.m; sourceTree = "<group>"; };
+		DED9D2C42234DAAF0003CDEA /* ThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
+		DED9D2C52234DAAF0003CDEA /* ThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemeManager.m; sourceTree = "<group>"; };
+		DED9D2C72235440F0003CDEA /* ThemeOptionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeOptionTableViewCell.h; sourceTree = "<group>"; };
+		DED9D2C82235440F0003CDEA /* ThemeOptionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemeOptionTableViewCell.m; sourceTree = "<group>"; };
+		DED9D2CF2235590D0003CDEA /* SearchITunesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchITunesViewController.h; sourceTree = "<group>"; };
+		DED9D2D02235590D0003CDEA /* SearchITunesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchITunesViewController.m; sourceTree = "<group>"; };
+		DED9D2D2223559A10003CDEA /* MovieTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieTableViewCell.h; sourceTree = "<group>"; };
+		DED9D2D3223559A10003CDEA /* MovieTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DED9D296223162BC0003CDEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3859F8A1B27FD9D031DEE5B5 /* Pods_AotterProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3175C8A8C44F6408228BC334 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCB4ADC4503D229F1B4216E6 /* Pods-AotterProject.debug.xcconfig */,
+				2C759394DC19746F5C734D2C /* Pods-AotterProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DED9D290223162BC0003CDEA = {
+			isa = PBXGroup;
+			children = (
+				DED9D29B223162BC0003CDEA /* AotterProject */,
+				DED9D29A223162BC0003CDEA /* Products */,
+				3175C8A8C44F6408228BC334 /* Pods */,
+				E6F0E79AA491B9A628C69DC2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DED9D29A223162BC0003CDEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DED9D299223162BC0003CDEA /* AotterProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DED9D29B223162BC0003CDEA /* AotterProject */ = {
+			isa = PBXGroup;
+			children = (
+				DED9D2C32234D9610003CDEA /* Service */,
+				DED9D2B32234B9540003CDEA /* View */,
+				DED9D2B22234B9430003CDEA /* ViewController */,
+				DED9D29C223162BC0003CDEA /* AppDelegate.h */,
+				DED9D29D223162BC0003CDEA /* AppDelegate.m */,
+				DED9D2A5223162BE0003CDEA /* Assets.xcassets */,
+				DED9D2AA223162BE0003CDEA /* Info.plist */,
+				DED9D2AB223162BE0003CDEA /* main.m */,
+			);
+			path = AotterProject;
+			sourceTree = "<group>";
+		};
+		DED9D2B22234B9430003CDEA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DED9D2B82234BA8B0003CDEA /* ContentSearch */,
+				DED9D2B72234BA610003CDEA /* MyInformation */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DED9D2B32234B9540003CDEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DED9D2A7223162BE0003CDEA /* LaunchScreen.storyboard */,
+				DED9D2A2223162BC0003CDEA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DED9D2B72234BA610003CDEA /* MyInformation */ = {
+			isa = PBXGroup;
+			children = (
+				DED9D2B92234C0540003CDEA /* TableViewCell */,
+				DED9D2B42234BA590003CDEA /* MyInfoViewController.h */,
+				DED9D2B52234BA590003CDEA /* MyInfoViewController.m */,
+				DED9D2C02234CED00003CDEA /* SettingThemeViewController.h */,
+				DED9D2C12234CED00003CDEA /* SettingThemeViewController.m */,
+				DE6318A3223659860065D221 /* MyCollectingViewController.h */,
+				DE6318A4223659860065D221 /* MyCollectingViewController.m */,
+				DE6318A622365FB40065D221 /* CollectingListViewController.h */,
+				DE6318A722365FB40065D221 /* CollectingListViewController.m */,
+			);
+			path = MyInformation;
+			sourceTree = "<group>";
+		};
+		DED9D2B82234BA8B0003CDEA /* ContentSearch */ = {
+			isa = PBXGroup;
+			children = (
+				DED9D2CE223558CE0003CDEA /* TableViewCell */,
+				DED9D2CF2235590D0003CDEA /* SearchITunesViewController.h */,
+				DED9D2D02235590D0003CDEA /* SearchITunesViewController.m */,
+			);
+			path = ContentSearch;
+			sourceTree = "<group>";
+		};
+		DED9D2B92234C0540003CDEA /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DED9D2BA2234C1630003CDEA /* CollectingInfoTableViewCell.h */,
+				DED9D2BB2234C1630003CDEA /* CollectingInfoTableViewCell.m */,
+				DED9D2BD2234C9A90003CDEA /* ThemeInfoTableViewCell.h */,
+				DED9D2BE2234C9A90003CDEA /* ThemeInfoTableViewCell.m */,
+				DED9D2C72235440F0003CDEA /* ThemeOptionTableViewCell.h */,
+				DED9D2C82235440F0003CDEA /* ThemeOptionTableViewCell.m */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		DED9D2C32234D9610003CDEA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DED9D2C42234DAAF0003CDEA /* ThemeManager.h */,
+				DED9D2C52234DAAF0003CDEA /* ThemeManager.m */,
+				DE6318A0223641E50065D221 /* CollectingManager.h */,
+				DE6318A1223641E50065D221 /* CollectingManager.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DED9D2CE223558CE0003CDEA /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DED9D2D2223559A10003CDEA /* MovieTableViewCell.h */,
+				DED9D2D3223559A10003CDEA /* MovieTableViewCell.m */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		E6F0E79AA491B9A628C69DC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37C1B5EBE3961232A9E7B810 /* Pods_AotterProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DED9D298223162BC0003CDEA /* AotterProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED9D2AF223162BE0003CDEA /* Build configuration list for PBXNativeTarget "AotterProject" */;
+			buildPhases = (
+				B653349587824E67F73B48DD /* [CP] Check Pods Manifest.lock */,
+				DED9D295223162BC0003CDEA /* Sources */,
+				DED9D296223162BC0003CDEA /* Frameworks */,
+				DED9D297223162BC0003CDEA /* Resources */,
+				A4EF84B3AC3EF4EC237181DC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AotterProject;
+			productName = AotterProject;
+			productReference = DED9D299223162BC0003CDEA /* AotterProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DED9D291223162BC0003CDEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = HappyTerry;
+				TargetAttributes = {
+					DED9D298223162BC0003CDEA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = DED9D294223162BC0003CDEA /* Build configuration list for PBXProject "AotterProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DED9D290223162BC0003CDEA;
+			productRefGroup = DED9D29A223162BC0003CDEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DED9D298223162BC0003CDEA /* AotterProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DED9D297223162BC0003CDEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED9D2A9223162BE0003CDEA /* LaunchScreen.storyboard in Resources */,
+				DED9D2A6223162BE0003CDEA /* Assets.xcassets in Resources */,
+				DED9D2A4223162BC0003CDEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4EF84B3AC3EF4EC237181DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AotterProject/Pods-AotterProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AotterProject/Pods-AotterProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B653349587824E67F73B48DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AotterProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DED9D295223162BC0003CDEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE6318A5223659860065D221 /* MyCollectingViewController.m in Sources */,
+				DE6318A2223641E50065D221 /* CollectingManager.m in Sources */,
+				DE6318A822365FB40065D221 /* CollectingListViewController.m in Sources */,
+				DED9D2AC223162BE0003CDEA /* main.m in Sources */,
+				DED9D2C62234DAAF0003CDEA /* ThemeManager.m in Sources */,
+				DED9D29E223162BC0003CDEA /* AppDelegate.m in Sources */,
+				DED9D2BF2234C9A90003CDEA /* ThemeInfoTableViewCell.m in Sources */,
+				DED9D2D12235590D0003CDEA /* SearchITunesViewController.m in Sources */,
+				DED9D2C92235440F0003CDEA /* ThemeOptionTableViewCell.m in Sources */,
+				DED9D2C22234CED00003CDEA /* SettingThemeViewController.m in Sources */,
+				DED9D2B62234BA590003CDEA /* MyInfoViewController.m in Sources */,
+				DED9D2D4223559A10003CDEA /* MovieTableViewCell.m in Sources */,
+				DED9D2BC2234C1630003CDEA /* CollectingInfoTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DED9D2A2223162BC0003CDEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DED9D2A3223162BC0003CDEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DED9D2A7223162BE0003CDEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DED9D2A8223162BE0003CDEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DED9D2AD223162BE0003CDEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DED9D2AE223162BE0003CDEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DED9D2B0223162BE0003CDEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCB4ADC4503D229F1B4216E6 /* Pods-AotterProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W93B3G2754;
+				INFOPLIST_FILE = AotterProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.happyterry.AotterProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DED9D2B1223162BE0003CDEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C759394DC19746F5C734D2C /* Pods-AotterProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W93B3G2754;
+				INFOPLIST_FILE = AotterProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.happyterry.AotterProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DED9D294223162BC0003CDEA /* Build configuration list for PBXProject "AotterProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED9D2AD223162BE0003CDEA /* Debug */,
+				DED9D2AE223162BE0003CDEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED9D2AF223162BE0003CDEA /* Build configuration list for PBXNativeTarget "AotterProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED9D2B0223162BE0003CDEA /* Debug */,
+				DED9D2B1223162BE0003CDEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DED9D291223162BC0003CDEA /* Project object */;
+}
