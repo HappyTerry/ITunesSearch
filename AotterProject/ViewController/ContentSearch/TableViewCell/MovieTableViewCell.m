@@ -51,7 +51,7 @@
     [_readMoreButton setHidden:(_isMusic ? YES : NO)];
     
     _collectingButton.layer.cornerRadius = 5;
-    [_collectingButton setTitle:([CollectingManager isCollecting:_data] ? @"取消收藏" : @"收藏") forState:UIControlStateNormal];
+    [_collectingButton setSelected:[CollectingManager isCollecting:_data]];
 }
 
 - (IBAction)collectingButtonDidClick:(UIButton *)sender {
@@ -60,6 +60,7 @@
     } else {
         [CollectingManager addCollecting:_data];
     }
+    [_collectingButton setSelected:[CollectingManager isCollecting:_data]];
 }
 
 - (IBAction)readMoreButtonDidClick:(UIButton *)sender {

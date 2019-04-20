@@ -49,7 +49,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ew9-hD-LqH">
-                                            <rect key="frame" x="197" y="7" width="163" height="30"/>
+                                            <rect key="frame" x="206" y="7" width="154" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="ZhO-yr-jzF"/>
                                             </constraints>
@@ -363,9 +363,11 @@
                                                         <constraint firstAttribute="height" constant="30" id="1Zi-JL-Hkr"/>
                                                         <constraint firstAttribute="width" constant="90" id="wL6-VA-l1y"/>
                                                     </constraints>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="收藏">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <state key="selected" title="取消收藏"/>
                                                     <connections>
                                                         <action selector="collectingButtonDidClick:" destination="xyZ-et-Qz8" eventType="touchUpInside" id="X25-xx-mav"/>
                                                     </connections>
@@ -560,9 +562,11 @@
                                                         <constraint firstAttribute="width" constant="90" id="Q6n-JC-C0G"/>
                                                         <constraint firstAttribute="height" constant="30" id="gIt-m3-86h"/>
                                                     </constraints>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="收藏">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <state key="selected" title="取消收藏"/>
                                                     <connections>
                                                         <action selector="collectingButtonDidClick:" destination="SxB-Sl-Y8y" eventType="touchUpInside" id="5Mp-es-wxc"/>
                                                     </connections>
@@ -628,6 +632,6 @@
         <image name="icPeopleNormal" width="24" height="24"/>
         <image name="icSearchActive" width="24" height="24"/>
         <image name="icSearchNormal" width="24" height="24"/>
-        <image name="information" width="24" height="24"/>
+        <image name="information" width="15" height="15"/>
     </resources>
 </document>
