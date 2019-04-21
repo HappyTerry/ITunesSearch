@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MovieTableViewCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CollectingListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface CollectingListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, MovieCellDelegate>
 
 @property (strong, nonatomic) NSArray * collectingList;
 @property (assign, nonatomic) BOOL isMusic;

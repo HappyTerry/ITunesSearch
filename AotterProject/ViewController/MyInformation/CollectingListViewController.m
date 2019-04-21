@@ -7,11 +7,13 @@
 //
 
 #import "CollectingListViewController.h"
-#import "MovieTableViewCell.h"
 
 #define TrackViewUrl @"trackViewUrl"
+#define TrackID @"trackId"
 
-@interface CollectingListViewController ()
+@interface CollectingListViewController () {
+    NSMutableDictionary * readMoreDict;
+}
 
 @end
 
@@ -21,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
+    readMoreDict = [NSMutableDictionary new];
 }
 
 #pragma mark - Layout
@@ -41,7 +44,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MovieTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"movieCell"];
     NSDictionary * data = [_collectingList objectAtIndex:indexPath.row];
-    [cell configure:data isMusic:_isMusic];
+    BOOL isReadMore = NO;
+    if ([data objectForKey:TrackID] != nil) {
+        isReadMore = [[data objectForKey:TrackID] boolValue];
+    }
+    [cell configure:data isMusic:_isMusic isReadMore:isReadMore];
+    cell.delegate = self;
     return cell;
 }
 
@@ -55,4 +63,15 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString] options:@{} completionHandler:nil];
 }
 
+#pragma mark - MovieCellDelegate
+- (void)cellDidSelectReadMore:(NSDictionary *)data {
+    if (data[TrackID] != nil) {
+        BOOL isReadMore = NO;
+        if (readMoreDict[data[TrackID]] != nil) {
+            isReadMore = [readMoreDict[data[TrackID]] boolValue];
+        }
+        readMoreDict[data[TrackID]] = [NSNumber numberWithBool:!isReadMore];
+    }
+    [_collectingTableView reloadData];
+}
 @end

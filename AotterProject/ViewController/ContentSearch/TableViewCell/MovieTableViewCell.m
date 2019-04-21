@@ -23,7 +23,7 @@
     // Configure the view for the selected state
 }
 
-- (void)configure:(NSDictionary *)data isMusic:(BOOL)isMusic {
+- (void)configure:(NSDictionary *)data isMusic:(BOOL)isMusic isReadMore:(BOOL)isReadMore {
     _data = [NSDictionary dictionaryWithDictionary:data];
     _isMusic = isMusic;
     [_iconImageView setImage:[UIImage imageNamed:@""]];
@@ -46,9 +46,19 @@
     if ([data.allKeys containsObject:@"longDescription"]) {
         [_descriptionLabel setText:data[@"longDescription"]];
     }
-    [_descriptionLabel setNumberOfLines:2];
-    [_descriptionLabel setHidden:(_isMusic ? YES : NO)];
-    [_readMoreButton setHidden:(_isMusic ? YES : NO)];
+    if (isMusic) {
+        [_descriptionLabel setHidden:YES];
+        [_readMoreButton setHidden:YES];
+    } else {
+        [_descriptionLabel setHidden:NO];
+        if (isReadMore) {
+            [_descriptionLabel setNumberOfLines:0];
+            [_readMoreButton setHidden:YES];
+        } else {
+            [_descriptionLabel setNumberOfLines:2];
+            [_readMoreButton setHidden:NO];
+        }
+    }
     
     _collectingButton.layer.cornerRadius = 5;
     [_collectingButton setSelected:[CollectingManager isCollecting:_data]];
@@ -64,8 +74,7 @@
 }
 
 - (IBAction)readMoreButtonDidClick:(UIButton *)sender {
-    [_descriptionLabel setNumberOfLines:0];
-    [_readMoreButton setHidden:YES];
+    [_delegate cellDidSelectReadMore:_data];
 }
 
 - (NSString *)getTimeString:(double)time {

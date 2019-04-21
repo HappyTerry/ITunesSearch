@@ -7,12 +7,14 @@
 //
 
 #import "SearchITunesViewController.h"
-#import "MovieTableViewCell.h"
 
 #define iTunesDomain @"https://itunes.apple.com/search"
 #define TrackViewUrl @"trackViewUrl"
+#define TrackID @"trackId"
 
-@interface SearchITunesViewController ()
+@interface SearchITunesViewController () {
+    NSMutableDictionary * readMoreDict;
+}
 
 @end
 
@@ -22,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
+    readMoreDict = [NSMutableDictionary new];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -70,22 +73,35 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    MovieTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"movieCell"];
+    MovieTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"movieCell" forIndexPath:indexPath];
     if (_movieList.count > 0) {
         if (indexPath.section == 0) {
             NSDictionary * data = [_movieList objectAtIndex:indexPath.row];
-            [cell configure:data isMusic:NO];
+            BOOL isReadMore = NO;
+            if ([data objectForKey:TrackID] != nil && readMoreDict[data[TrackID]] != nil) {
+                isReadMore = [readMoreDict[data[TrackID]] boolValue];
+            }
+            [cell configure:data isMusic:NO isReadMore:isReadMore];
         }
         if (_musicList.count > 0) {
             if (indexPath.section == 1) {
                 NSDictionary * data = [_musicList objectAtIndex:indexPath.row];
-                [cell configure:data isMusic:YES];
+                BOOL isReadMore = NO;
+                if ([data objectForKey:TrackID] != nil && readMoreDict[data[TrackID]] != nil) {
+                    isReadMore = [readMoreDict[data[TrackID]] boolValue];
+                }
+                [cell configure:data isMusic:YES isReadMore:isReadMore];
             }
         }
     } else if (_musicList.count > 0) {
         NSDictionary * data = [_musicList objectAtIndex:indexPath.row];
-        [cell configure:data isMusic:YES];
+        BOOL isReadMore = NO;
+        if ([data objectForKey:TrackID] != nil && readMoreDict[data[TrackID]] != nil) {
+            isReadMore = [readMoreDict[data[TrackID]] boolValue];
+        }
+        [cell configure:data isMusic:YES isReadMore:isReadMore];
     }
+    cell.delegate = self;
     return cell;
 }
 
@@ -143,11 +159,15 @@
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     [searchBar endEditing:YES];
+    [readMoreDict removeAllObjects];
     [self searchITunes:searchBar.text completion:^(NSArray * results) {
         NSMutableArray * __movieList = [NSMutableArray new];
         NSMutableArray * __musicList = [NSMutableArray new];
         for (NSDictionary * result in results) {
             if ([result isKindOfClass:[NSDictionary class]]) {
+                if ([result.allKeys containsObject:TrackID]) {
+                    [self->readMoreDict setObject:[NSNumber numberWithBool:NO] forKey:TrackID];
+                }
                 if ([result.allKeys containsObject:@"kind"]) {
                     if ([result[@"kind"] containsString:@"song"]) {
                         [__musicList addObject:result];
@@ -188,5 +208,17 @@
         }
     }];
     [dataTask resume];
+}
+
+#pragma mark - MovieCellDelegate
+- (void)cellDidSelectReadMore:(NSDictionary *)data {
+    if (data[TrackID] != nil) {
+        BOOL isReadMore = NO;
+        if (readMoreDict[data[TrackID]] != nil) {
+            isReadMore = [readMoreDict[data[TrackID]] boolValue];
+        }
+        readMoreDict[data[TrackID]] = [NSNumber numberWithBool:!isReadMore];
+    }
+    [_itunesTableView reloadData];
 }
 @end

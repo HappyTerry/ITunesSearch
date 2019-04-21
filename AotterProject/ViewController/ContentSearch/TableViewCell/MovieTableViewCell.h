@@ -10,10 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol MovieCellDelegate;
+
 @interface MovieTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) NSDictionary * data;
 @property (nonatomic) BOOL isMusic;
+@property (weak, nonatomic) id delegate;
 
 @property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
 @property (weak, nonatomic) IBOutlet UILabel *trackNameLabel;
@@ -24,8 +27,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIButton *readMoreButton;
 @property (weak, nonatomic) IBOutlet UIButton *collectingButton;
 
-- (void)configure:(NSDictionary *)data isMusic:(BOOL)isMusic;
+- (void)configure:(NSDictionary *)data isMusic:(BOOL)isMusic isReadMore:(BOOL)isReadMore;
 
 @end
 
+@protocol MovieCellDelegate<NSObject>
+
+@optional
+- (void)cellDidSelectReadMore: (NSDictionary *)data;
+
+@end
 NS_ASSUME_NONNULL_END
