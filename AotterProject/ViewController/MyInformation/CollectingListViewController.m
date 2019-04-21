@@ -45,8 +45,8 @@
     MovieTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"movieCell"];
     NSDictionary * data = [_collectingList objectAtIndex:indexPath.row];
     BOOL isReadMore = NO;
-    if ([data objectForKey:TrackID] != nil) {
-        isReadMore = [[data objectForKey:TrackID] boolValue];
+    if ([data objectForKey:TrackID] != nil && readMoreDict[data[TrackID]] != nil) {
+        isReadMore = [readMoreDict[data[TrackID]] boolValue];
     }
     [cell configure:data isMusic:_isMusic isReadMore:isReadMore];
     cell.delegate = self;
