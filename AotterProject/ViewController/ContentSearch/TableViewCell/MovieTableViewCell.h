@@ -35,6 +35,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 - (void)cellDidSelectReadMore: (NSDictionary *)data;
-
+- (void)cellDidSelectCancelCollect: (NSDictionary *)data;
 @end
 NS_ASSUME_NONNULL_END

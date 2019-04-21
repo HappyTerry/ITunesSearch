@@ -67,6 +67,7 @@
 - (IBAction)collectingButtonDidClick:(UIButton *)sender {
     if ([CollectingManager isCollecting:_data]) {
         [CollectingManager removeCollecting:_data];
+        [_delegate cellDidSelectCancelCollect:_data];
     } else {
         [CollectingManager addCollecting:_data];
     }

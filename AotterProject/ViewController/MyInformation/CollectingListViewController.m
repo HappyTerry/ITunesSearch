@@ -7,6 +7,7 @@
 //
 
 #import "CollectingListViewController.h"
+#import "CollectingManager.h"
 
 #define TrackViewUrl @"trackViewUrl"
 #define TrackID @"trackId"
@@ -72,6 +73,17 @@
         }
         readMoreDict[data[TrackID]] = [NSNumber numberWithBool:!isReadMore];
     }
+    [_collectingTableView reloadData];
+}
+
+- (void)cellDidSelectCancelCollect:(NSDictionary *)data {
+    NSMutableArray * newList = [NSMutableArray new];
+    for (NSDictionary * item in _collectingList) {
+        if (![item[TrackID] isEqual:data[TrackID]]) {
+            [newList addObject:item];
+        }
+    }
+    _collectingList = [NSArray arrayWithArray:newList];
     [_collectingTableView reloadData];
 }
 @end

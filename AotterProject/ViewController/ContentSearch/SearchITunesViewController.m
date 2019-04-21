@@ -221,4 +221,9 @@
     }
     [_itunesTableView reloadData];
 }
+
+- (void)cellDidSelectCancelCollect:(NSDictionary *)data {
+    
+}
+   
 @end
