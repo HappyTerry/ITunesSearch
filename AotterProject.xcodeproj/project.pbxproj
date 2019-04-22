@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3859F8A1B27FD9D031DEE5B5 /* Pods_AotterProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C1B5EBE3961232A9E7B810 /* Pods_AotterProject.framework */; };
+		882BBF9B226C76DC00095DB1 /* UIColor+CFA.m in Sources */ = {isa = PBXBuildFile; fileRef = 882BBF95226C76DC00095DB1 /* UIColor+CFA.m */; };
+		882BBF9C226C76DC00095DB1 /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 882BBF97226C76DC00095DB1 /* ThemeManager.m */; };
+		882BBF9D226C76DC00095DB1 /* UIResponder+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 882BBF9A226C76DC00095DB1 /* UIResponder+Theme.m */; };
 		DE6318A2223641E50065D221 /* CollectingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6318A1223641E50065D221 /* CollectingManager.m */; };
 		DE6318A5223659860065D221 /* MyCollectingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6318A4223659860065D221 /* MyCollectingViewController.m */; };
 		DE6318A822365FB40065D221 /* CollectingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6318A722365FB40065D221 /* CollectingListViewController.m */; };
@@ -20,7 +23,6 @@
 		DED9D2BC2234C1630003CDEA /* CollectingInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2BB2234C1630003CDEA /* CollectingInfoTableViewCell.m */; };
 		DED9D2BF2234C9A90003CDEA /* ThemeInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2BE2234C9A90003CDEA /* ThemeInfoTableViewCell.m */; };
 		DED9D2C22234CED00003CDEA /* SettingThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2C12234CED00003CDEA /* SettingThemeViewController.m */; };
-		DED9D2C62234DAAF0003CDEA /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2C52234DAAF0003CDEA /* ThemeManager.m */; };
 		DED9D2C92235440F0003CDEA /* ThemeOptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2C82235440F0003CDEA /* ThemeOptionTableViewCell.m */; };
 		DED9D2D12235590D0003CDEA /* SearchITunesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2D02235590D0003CDEA /* SearchITunesViewController.m */; };
 		DED9D2D4223559A10003CDEA /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9D2D3223559A10003CDEA /* MovieTableViewCell.m */; };
@@ -29,6 +31,12 @@
 /* Begin PBXFileReference section */
 		2C759394DC19746F5C734D2C /* Pods-AotterProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AotterProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-AotterProject/Pods-AotterProject.release.xcconfig"; sourceTree = "<group>"; };
 		37C1B5EBE3961232A9E7B810 /* Pods_AotterProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AotterProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		882BBF95226C76DC00095DB1 /* UIColor+CFA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CFA.m"; sourceTree = "<group>"; };
+		882BBF96226C76DC00095DB1 /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
+		882BBF97226C76DC00095DB1 /* ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManager.m; sourceTree = "<group>"; };
+		882BBF98226C76DC00095DB1 /* UIColor+CFA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CFA.h"; sourceTree = "<group>"; };
+		882BBF99226C76DC00095DB1 /* UIResponder+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Theme.h"; sourceTree = "<group>"; };
+		882BBF9A226C76DC00095DB1 /* UIResponder+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Theme.m"; sourceTree = "<group>"; };
 		BCB4ADC4503D229F1B4216E6 /* Pods-AotterProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AotterProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AotterProject/Pods-AotterProject.debug.xcconfig"; sourceTree = "<group>"; };
 		DE6318A0223641E50065D221 /* CollectingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectingManager.h; sourceTree = "<group>"; };
 		DE6318A1223641E50065D221 /* CollectingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectingManager.m; sourceTree = "<group>"; };
@@ -52,8 +60,6 @@
 		DED9D2BE2234C9A90003CDEA /* ThemeInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemeInfoTableViewCell.m; sourceTree = "<group>"; };
 		DED9D2C02234CED00003CDEA /* SettingThemeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingThemeViewController.h; sourceTree = "<group>"; };
 		DED9D2C12234CED00003CDEA /* SettingThemeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingThemeViewController.m; sourceTree = "<group>"; };
-		DED9D2C42234DAAF0003CDEA /* ThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
-		DED9D2C52234DAAF0003CDEA /* ThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemeManager.m; sourceTree = "<group>"; };
 		DED9D2C72235440F0003CDEA /* ThemeOptionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeOptionTableViewCell.h; sourceTree = "<group>"; };
 		DED9D2C82235440F0003CDEA /* ThemeOptionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemeOptionTableViewCell.m; sourceTree = "<group>"; };
 		DED9D2CF2235590D0003CDEA /* SearchITunesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchITunesViewController.h; sourceTree = "<group>"; };
@@ -81,6 +87,19 @@
 				2C759394DC19746F5C734D2C /* Pods-AotterProject.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		882BBF94226C76C300095DB1 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				882BBF96226C76DC00095DB1 /* ThemeManager.h */,
+				882BBF97226C76DC00095DB1 /* ThemeManager.m */,
+				882BBF98226C76DC00095DB1 /* UIColor+CFA.h */,
+				882BBF95226C76DC00095DB1 /* UIColor+CFA.m */,
+				882BBF99226C76DC00095DB1 /* UIResponder+Theme.h */,
+				882BBF9A226C76DC00095DB1 /* UIResponder+Theme.m */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		DED9D290223162BC0003CDEA = {
@@ -176,8 +195,7 @@
 		DED9D2C32234D9610003CDEA /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				DED9D2C42234DAAF0003CDEA /* ThemeManager.h */,
-				DED9D2C52234DAAF0003CDEA /* ThemeManager.m */,
+				882BBF94226C76C300095DB1 /* Theme */,
 				DE6318A0223641E50065D221 /* CollectingManager.h */,
 				DE6318A1223641E50065D221 /* CollectingManager.m */,
 			);
@@ -315,11 +333,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE6318A5223659860065D221 /* MyCollectingViewController.m in Sources */,
+				882BBF9C226C76DC00095DB1 /* ThemeManager.m in Sources */,
 				DE6318A2223641E50065D221 /* CollectingManager.m in Sources */,
 				DE6318A822365FB40065D221 /* CollectingListViewController.m in Sources */,
 				DED9D2AC223162BE0003CDEA /* main.m in Sources */,
-				DED9D2C62234DAAF0003CDEA /* ThemeManager.m in Sources */,
 				DED9D29E223162BC0003CDEA /* AppDelegate.m in Sources */,
+				882BBF9B226C76DC00095DB1 /* UIColor+CFA.m in Sources */,
 				DED9D2BF2234C9A90003CDEA /* ThemeInfoTableViewCell.m in Sources */,
 				DED9D2D12235590D0003CDEA /* SearchITunesViewController.m in Sources */,
 				DED9D2C92235440F0003CDEA /* ThemeOptionTableViewCell.m in Sources */,
@@ -327,6 +346,7 @@
 				DED9D2B62234BA590003CDEA /* MyInfoViewController.m in Sources */,
 				DED9D2D4223559A10003CDEA /* MovieTableViewCell.m in Sources */,
 				DED9D2BC2234C1630003CDEA /* CollectingInfoTableViewCell.m in Sources */,
+				882BBF9D226C76DC00095DB1 /* UIResponder+Theme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 //
 
 #import "SettingThemeViewController.h"
-#import "ThemeManager.h"
+#import "UIResponder+Theme.h"
 #import "ThemeOptionTableViewCell.h"
 
 #define OptionCell @"themeOptionCell"
@@ -24,6 +24,7 @@ static NSInteger selectedTheme = 0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
+    [self registerForThemeChanges];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -38,14 +39,19 @@ static NSInteger selectedTheme = 0;
     [super viewWillDisappear:animated];
     switch (selectedTheme) {
         case 0:
-            [ThemeManager darkTheme];
+            
             break;
         case 1:
-            [ThemeManager lightTheme];
+            
             break;
         default:
             break;
     }
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - Layout
