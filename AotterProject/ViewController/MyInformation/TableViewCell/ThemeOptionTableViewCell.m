@@ -17,8 +17,12 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
     // Configure the view for the selected state
+    if (selected) {
+        [self setAccessoryType:UITableViewCellAccessoryCheckmark];
+    } else {
+        [self setAccessoryType:UITableViewCellAccessoryNone];
+    }
 }
 
 - (void)configure:(NSInteger)themeType {

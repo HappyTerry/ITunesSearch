@@ -31,21 +31,12 @@ static NSInteger selectedTheme = 0;
     //get selectedTheme
     NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
     selectedTheme = [userDefaults integerForKey:@"ThemeType"];
-    [_themeTableView reloadData];
+    [_themeTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:selectedTheme inSection:0] animated:NO scrollPosition:UITableViewScrollPositionNone];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    switch (selectedTheme) {
-        case 0:
-            [ThemeManager darkTheme];
-            break;
-        case 1:
-            [ThemeManager lightTheme];
-            break;
-        default:
-            break;
-    }
+    
 }
 
 #pragma mark - Layout
@@ -66,11 +57,6 @@ static NSInteger selectedTheme = 0;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ThemeOptionTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:OptionCell];
     [cell configure:indexPath.row];
-    if (selectedTheme == indexPath.row) {
-        [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
-    } else {
-        [cell setAccessoryType:UITableViewCellAccessoryNone];
-    }
     return cell;
 }
 
@@ -80,10 +66,19 @@ static NSInteger selectedTheme = 0;
         return;
     }
     selectedTheme = indexPath.row;
-    [tableView reloadData];
     NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setInteger:selectedTheme forKey:@"ThemeType"];
     [userDefaults synchronize];
+    switch (selectedTheme) {
+        case 0:
+        [ThemeManager darkTheme];
+        break;
+        case 1:
+        [ThemeManager lightTheme];
+        break;
+        default:
+        break;
+    }
 }
 
 @end
